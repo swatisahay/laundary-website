@@ -43,7 +43,7 @@ For any questions or support details, please email:
 * Add images and styling for site.
 
 ## Workflow Diagram
-
+![](src/assets/images/Routing.png)
 
 ## MIT License
 
