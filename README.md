@@ -29,7 +29,7 @@ For any questions or support details, please email:
 
 
 ## Spec
-###MVP
+### MVP
 * User can see the home page
 * User can see the about us page.
 * User can see the services provided by the laundary
@@ -37,7 +37,8 @@ For any questions or support details, please email:
 * User can book the schedule for laundary pickup.
 * Employee can check the number of user for the services
 * Employee can edit the services
-###Further exploration
+
+### Further exploration
 * User can create an  account and login using their credentials
 * Employee can see list of registered user  
 * Add images and styling for site.
