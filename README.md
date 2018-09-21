@@ -7,7 +7,7 @@
   * Swati Sahay
 
 ## Description
- An interactive dynamic webpage for laundry services
+ A dynamic interactive webpage for laundry services
 ## Setup
 
   * Git clone the file  
