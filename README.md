@@ -15,8 +15,12 @@
   * npm start
 
 ## Technologies Used
-
-  **ReactJS**
+  * Angular/React
+  * C#
+  * MySQL/firebase as database
+  * HTML
+  * CSS
+  * Bootstrap
 
 ## Support and Contact
 
