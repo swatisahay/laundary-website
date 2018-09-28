@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Home from './Home';
+import { Switch, Route } from 'react-router-dom';
 
 
 
@@ -14,14 +15,11 @@ function App(){
   return(
     <div className="container">
       <Header/>
-      <Home/>
+      <Switch>
+        <Route exact path='/' render={() => <Home />} />
 
 
-
-
-
-
-
+    </Switch>
 
     </div>
 

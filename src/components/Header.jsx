@@ -13,8 +13,17 @@ function Header(){
 
          <ul class="navbar-nav">
             <li className="nav-item"><Link className="nav-link" to='/'>Home</Link></li>
-            <li className="nav-item"><Link className="nav-link" to='/aboutus'>About Us</Link></li>
-            <li className="nav-item"><Link className="nav-link" to='/sevices'>Services</Link></li>
+            <li clasName="nav-item dropdown">
+             <Link className="nav-link dropdown-toggle" to='/aboutus' id="navbardrop" data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+               About
+             </Link>
+             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href='/pricing'>Pricing</a>
+               <a class="dropdown-item" href='/routes'>Routes</a>
+
+             </div>
+           </li>
+            <li className="nav-item"><Link className="nav-link" to='/services'>Services</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/schedule'>Schedule Pick-Up</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/contact'>Contact Us</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/login'>LogIn</Link></li>
