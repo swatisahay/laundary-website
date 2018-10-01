@@ -19,7 +19,7 @@ function App(){
         <Route exact path='/' render={() => <Home />} />
 
 
-    </Switch>
+      </Switch>
 
     </div>
 
