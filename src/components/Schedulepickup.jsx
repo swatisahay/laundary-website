@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 import constants from './../constants';
 const { c } = constants;
-// import { addPickup } from './../actions';
+// import { addOrder } from './../actions';
 
 function Schedulepickup(props){
   let _names = null;
@@ -20,7 +20,7 @@ function Schedulepickup(props){
   function handleSchedulepickupSubmission(event) {
     const { dispatch } = props;
     event.preventDefault();
-    dispatch(addPickup(_names.value, _emailAddress.value, _preferredPickup.value, _preferredDelivery.value, address.value, _phoneNumber.value, _numberOfBags.value, _anySpecialInstruction.value ));
+    dispatch(addOrder(_names.value, _emailAddress.value, _preferredPickup.value, _preferredDelivery.value, address.value, _phoneNumber.value, _numberOfBags.value, _anySpecialInstruction.value ));
     _names.value = '';
      _emailAddress.value = '';
      _preferredPickup.value = '';
