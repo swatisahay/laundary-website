@@ -6,7 +6,7 @@ import Moment from 'Moment';
 firebase.initializeApp(firebaseConfig);
 const orders = firebase.database().ref('orders');
 
-export function addOrder(_names, _emailAddress, preferredPickup, _preferredDelivery, _address, _phoneNumber, _numberOfBags, _anySpecialInstruction) {
+export function addOrder(_names, _emailAddress, _preferredPickup, _preferredDelivery, _address, _phoneNumber, _numberOfBags, _anySpecialInstruction) {
   return () => orders.push({
      names : _names,
      emailAddress: _emailAddress,
