@@ -73,8 +73,23 @@ function Schedulepickup(props){
           id='anyspecialinstruction'
           placeholder='Any Special Instruction'
           ref={(textarea) => {_anySpecialInstruction = textarea;}}/>
-        <button type='submit'>Help!</button>
+        <button type='submit'>Submit!</button>
       </form>
+      <style jsx>{`
+       .form-control {
+         margin-bottom: 20px;
+       }
+       h3 {
+         text-align: center;
+       }
+     `}</style>
+     <style global jsx>{`
+         body {
+           background-color: #D2691E;
+           background-size: cover;
+           background-repeat:no-repeat;
+         }
+       `}</style>
     </div>
   );
 }
