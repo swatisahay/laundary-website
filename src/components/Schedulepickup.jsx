@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 import constants from './../constants';
 const { c } = constants;
-// import { addOrder } from './../actions';
+import { addOrder } from './../actions';
 
 function Schedulepickup(props){
   let _names = null;
@@ -22,13 +22,13 @@ function Schedulepickup(props){
     event.preventDefault();
     dispatch(addOrder(_names.value, _emailAddress.value, _preferredPickup.value, _preferredDelivery.value, address.value, _phoneNumber.value, _numberOfBags.value, _anySpecialInstruction.value ));
     _names.value = '';
-     _emailAddress.value = '';
-     _preferredPickup.value = '';
-     _preferredDelivery.value = '';
-     _address.value = '';
-     _phoneNumber.value = '';
-     _numberOfBags.value = '';
-     _anySpecialInstruction.value = '';
+    _emailAddress.value = '';
+    _preferredPickup.value = '';
+    _preferredDelivery.value = '';
+    _address.value = '';
+    _phoneNumber.value = '';
+    _numberOfBags.value = '';
+    _anySpecialInstruction.value = '';
   }
 
   return (
@@ -44,16 +44,16 @@ function Schedulepickup(props){
           id='email'
           placeholder='Email Address'
           ref={(input) => {_emailAddress = input;}}/>
-          <input
-            type='text'
-            id='pickup'
-            placeholder='Preferred Pickup Day'
-            ref={(input) => {_preferredPickup = input;}}/>
         <input
-            type='text'
-            id='delivery'
-            placeholder='Preferred Pickup Day'
-            ref={(input) => {_preferredDelivery = input;}}/>
+          type='text'
+          id='pickup'
+          placeholder='Preferred Pickup Day'
+          ref={(input) => {_preferredPickup = input;}}/>
+        <input
+          type='text'
+          id='delivery'
+          placeholder='Preferred Pickup Day'
+          ref={(input) => {_preferredDelivery = input;}}/>
         <input
           type='text'
           id='address'

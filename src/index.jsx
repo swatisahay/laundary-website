@@ -5,20 +5,34 @@ import { AppContainer } from 'react-hot-loader';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { HashRouter } from 'react-router-dom';
 
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers/index';
+import thunkMiddleware from 'redux-thunk';
+
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+
+let unsubscribe = store.subscribe(() =>
+  console.log(store.getState())
+);
+
 const render = (Component) => {
   ReactDOM.render(
-    <AppContainer>
-      <HashRouter>
+    <HashRouter>
+      <Provider store={store}>
         <Component/>
-      </HashRouter>
-    </AppContainer>,
+      </Provider>
+    </HashRouter>,
     document.getElementById('react-app-root')
   );
 };
 
 render(App);
+
+/*eslint-disable */
 if (module.hot) {
   module.hot.accept('./components/App', () => {
     render(App);
   });
 }
+/*eslint-enable */
