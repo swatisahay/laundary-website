@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.jpg';
 function Header(){
+render(){
   return (
+
     <div>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
@@ -26,6 +28,7 @@ function Header(){
             <li className="nav-item"><Link className="nav-link" to='/services'>Services</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/schedule'>Schedule Pick-Up</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/contact'>Contact Us</Link></li>
+            <li className="nav-item"><Link className="nav-link" to='/admin'>Admin</Link></li>
             <li className="nav-item"><Link className="nav-link" to='/login'>LogIn</Link></li>
           </ul>
       </nav>
@@ -53,6 +56,8 @@ function Header(){
       `}</style>
     </div>
   );
+  }
 }
+
 
 export default Header;
